@@ -2,36 +2,40 @@ package Calculator;
 
 public class mathOperation {
     
-    public void calculate (String[] mathOperation){
+    private String operator;
+    private float num1;
+    private float num2;
 
-        float answer;
+    
+    float answer;
 
-        switch (mathOperation[1]){
+    public float calculate (float num1, float num2, String operator){
+
+
+        switch (operator){
 
             case "+":
 
-            answer = Float.parseFloat(mathOperation[0]) + Float.parseFloat(mathOperation[2]);
-            System.out.println(answer);
+            answer = num1 + num2;
             break;
                 
             case "-":
-                answer = Float.parseFloat(mathOperation[0]) - Float.parseFloat(mathOperation[2]);
-                System.out.println(answer);
+            answer = num1 - num2;
                 break;
 
 
             case "*":
-            answer = Float.parseFloat(mathOperation[0]) * Float.parseFloat(mathOperation[2]);
-                System.out.println(answer);
+            answer = num1 * num2;
                 break;
 
 
             case "/":
-            answer = Float.parseFloat(mathOperation[0]) / Float.parseFloat(mathOperation[2]);
-                System.out.println(answer);
+            answer = num1 / num2;
                 break;
 
             }
+
+            return answer;
     
         }
 }
