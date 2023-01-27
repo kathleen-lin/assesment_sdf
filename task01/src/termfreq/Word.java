@@ -36,7 +36,7 @@ public class Word {
         
         String cleanedWord = this.word.replaceAll("[;.,:!-(){},\"?]", "").toLowerCase();
         this.word = cleanedWord;
-        System.out.println(cleanedWord);
+        //System.out.println(cleanedWord);
 
         return cleanedWord;
     }

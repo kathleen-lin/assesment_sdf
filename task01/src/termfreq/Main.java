@@ -51,15 +51,15 @@ public class Main {
 
                 }
         }
-        System.out.println(totalWord);
-        System.out.println(Arrays.asList(wordCount));
+        //System.out.println(totalWord);
+        //System.out.println(Arrays.asList(wordCount));
 
         // sort the map and print out top 10 (modify the number to frquency)
         LinkedHashMap<String, Integer> reverseSortedMap = new LinkedHashMap<>();
  
         wordCount.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).forEachOrdered(word -> reverseSortedMap.put(word.getKey(), word.getValue()));
 
-        System.out.println(Arrays.asList(reverseSortedMap));
+        //System.out.println(Arrays.asList(reverseSortedMap));
 
         // got a LinkedHashMap name reverseSortedMap
         for (int i = 1; i < 11; i++){
